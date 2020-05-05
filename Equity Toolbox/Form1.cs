@@ -24,8 +24,8 @@ namespace Equity_Toolbox
         //Form Load
         private void Form1_Load(object sender, EventArgs e)
         {
-            textBoxPassword.Text = "Equity" + currentYear + "!";
-            textBoxBrittniPassword.Text = "Equity" + currentYear + "!";
+            textBoxPassword.Text = "PASS";
+            textBoxBrittniPassword.Text = "PASS";
         }
 
         public void buttonGo_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace Equity_Toolbox
             //Login
             labelStatus.Text = "Status - Logging in to Equity Elevate";
             labelStatus.Refresh();
-            driver.FindElement(By.Id("Email")).SendKeys("brittnibasso@gmail.com");
+            driver.FindElement(By.Id("Email")).SendKeys("INVALID@gmail.com");
             driver.FindElement(By.Id("Password")).SendKeys(textBoxBrittniPassword.Text);
             
             //Select admin user and navigate to roster
